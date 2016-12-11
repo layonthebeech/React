@@ -1,0 +1,25 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "production": "webpack -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  },
+  "devDependencies": {
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.9",
+    "babel-preset-react": "^6.16.0",
+    "coffee-loader": "^0.7.2",
+    "coffee-script": "^1.12.1",
+    "html-webpack-plugin": "^2.24.1",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
