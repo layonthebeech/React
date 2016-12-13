@@ -1,3 +1,20 @@
-var app = document.getElementById('app');
+var React = require('react');
+var ReactDOM = require('react-dom');
+var routes = require('./config/routes');
+//var routes = require('./config/routes');
 
-app.innerHTML = "Hello"
+
+/*
+Focused
+Independent
+Reusable
+Small
+Testable
+*/
+
+
+
+ReactDOM.render(
+  routes,
+  document.getElementById('app')
+)

@@ -1,6 +1,6 @@
 // In webpack.config.js
-var path = require('path')
-var HtmlWebpackPlugin = require('html-webpack-plugin')
+var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 var HTMLWebpackPluginConfig = new HtmlWebpackPlugin({
   template: path.resolve(__dirname + '/app/index.html'),
   filename: 'index.html',
