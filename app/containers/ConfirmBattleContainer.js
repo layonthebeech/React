@@ -29,6 +29,14 @@ var ConfirmBattleContainer = React.createClass({
       }.bind(this))
     //fetch info from github then update state
   },
+  handleInitiateBattle: function () {
+    this.context.router.push({
+      pathname: '/results',
+      state: {
+        playersInfo: this.state.playersInfo
+      }
+    })
+  },
   componentWillReceiveProps: function () {
     console.log('componentWillReceiveProps');
   },
@@ -39,6 +47,7 @@ var ConfirmBattleContainer = React.createClass({
     return (
       <ConfirmBattle
         isLoading={this.state.isLoading}
+        onInitiateBattle={this.handleInitiateBattle}
         playersInfo={this.state.playersInfo}
         />
     )
