@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
   response.sendFile(__dirname + '/dist/index.html')
 });
 
-app.listen(PORT, function(error) {
+app.listen(process.env.PORT || PORT, function(error) {
   if (error) {
     console.error(error);
   } else {
