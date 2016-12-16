@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "production": "webpack -p",
-    "start": "webpack-dev-server"
+    "prod": "NODE_ENV=production node server.js",
+    "postinstall": "webpack -p --config webpack.config.js",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
